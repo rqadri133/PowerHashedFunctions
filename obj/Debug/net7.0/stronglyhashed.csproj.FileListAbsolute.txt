@@ -1,0 +1,15 @@
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.csproj.AssemblyReference.cache
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.GeneratedMSBuildEditorConfig.editorconfig
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.AssemblyInfoInputs.cache
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.AssemblyInfo.cs
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.csproj.CoreCompileInputs.cache
+/Users/syedqadri/Documents/Development/stronglyhashed/bin/Debug/net7.0/stronglyhashed
+/Users/syedqadri/Documents/Development/stronglyhashed/bin/Debug/net7.0/stronglyhashed.deps.json
+/Users/syedqadri/Documents/Development/stronglyhashed/bin/Debug/net7.0/stronglyhashed.runtimeconfig.json
+/Users/syedqadri/Documents/Development/stronglyhashed/bin/Debug/net7.0/stronglyhashed.dll
+/Users/syedqadri/Documents/Development/stronglyhashed/bin/Debug/net7.0/stronglyhashed.pdb
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.dll
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/refint/stronglyhashed.dll
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.pdb
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/stronglyhashed.genruntimeconfig.cache
+/Users/syedqadri/Documents/Development/stronglyhashed/obj/Debug/net7.0/ref/stronglyhashed.dll

@@ -1,0 +1,3 @@
+setPassword cAr1
+authorize   6374637434
+authorize   4374738434
