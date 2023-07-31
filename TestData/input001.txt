@@ -1,3 +1,4 @@
-setPassword cAr1
-authorize   6374637434
-authorize   4374738434
+setPassword 000A
+authorize 108738450
+authorize 108738449
+authorize 244736787

@@ -2,16 +2,10 @@
 
 
 
-       
-long maxSum = CalculateHashed.GenerateHashed("cAr1");
 
-Console.WriteLine($"The Calculated Hashed is {maxSum}");
-long maxSum2 = CalculateHashed.GenerateHashed("000A");
-Console.WriteLine($"The Calculated Hashed is {maxSum2}");
+using stronglyhashed.Classes.Util;
 
-long maxSum3 = CalculateHashed.GenerateHashed("HelloCinderall@199");
-Console.WriteLine($"The Calculated Hashed is {maxSum2}");
-
+CalculateHashed.RunTestCases();
 
 class Pod 
 {
@@ -69,10 +63,55 @@ class Pod
 
 class CalculateHashed
 {
+    public static void RunTestCases()
+    {
+        List<Line> lines = FileContextReader.ReadFile(@"/Users/syedqadri/Documents/Development/stronglyhashed/TestData/input001.txt");
+        List<long> hashedList = new List<long>();
+        List<int> hashedInts = new List<int>();
+        foreach (Line l in lines)
+        {
+           string[] inputData = l.LineContent.Split(" ".ToCharArray(),StringSplitOptions.RemoveEmptyEntries);
+           if(inputData[0] == "setPassword")
+           {
+               long hashed = GenerateHashed(inputData[1]);
+               Console.WriteLine($"hashed map is {hashed % 10000000007}");
+               hashedList.Add((hashed % 10000000007));
+               for(char k = '0' ; k < 'Z' ; k++)
+               {
+                 // string str = inputData[1] + k.ToString();
+                  long rehashed = hashed + 1;
+                  Console.WriteLine($"Re hashed is {rehashed % 1000000007}");
+                  hashedList.Add((rehashed % 10000000007)); 
+               }   
+           }
+           else 
+           {
+
+              long hashedFound = Convert.ToInt64(inputData[1]);
+              // authorize (
+               if(hashedList.Contains(hashedFound))
+               {
+                  hashedInts.Add(1);
+
+               }
+               else 
+               {
+                  hashedInts.Add(0);
+               }
+           }
+         }
+           for(int i =0 ; i < hashedInts.Count ; i++)
+           {
+              Console.WriteLine(hashedInts[i]);
+           }
+        
+
+    }
+      
 
    public static long GenerateHashed(string pass)
    {
-         int maxpowerhash =  pass.Length ;
+         int maxpowerhash =  pass.Length -1  ;
          long sumMax = 0;
           Console.WriteLine($"For the Formuale f'(C) * 131 to the powermax accumulate till the powermax 0");
               
@@ -96,7 +135,7 @@ class CalculateHashed
 
 
          }    
-         return sumMax;
+         return sumMax ;
 
          
 
